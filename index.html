@@ -1,67 +1,299 @@
 <!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-    <link rel="stylesheet" href="style.css">
-</head>
-<body>
+<html lang="uk">
+  <head>
+    <meta charset="UTF-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1.0"
+    />
+    <title>Магазин техніки</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <header id="home">
+      <img
+        src="data:image/jpeg;base64,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"
+        class="logo"
+        alt="Лого"
+      />
+      <nav class="nav1">
+        <a href="#home" class="a1">Головна</a>
+        <a href="#products">Товари</a>
+        <a href="#contacts">Контакти</a>
+      </nav>
+    </header>
 
-<header>
-<img src="data:image/jpeg;base64,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" class="logo">
-<nav class="nav1">
-<a href="" class="a1">Головна</a>
-<a href="">Товари</a>
-<a href="">Контакти</a>
-</nav>
-</header>
+    <main>
+      <h1>Вітаємо в нашому інтернет-магазині</h1>
+      <p class="p1">
+        Тут ви зможете знайти якісну техніку за невелику ціну
+      </p>
+      <p class="p2">
+        У нас є різні гаджети, такі як: смартфони, ноутбуки та
+        планшети
+      </p>
 
+      <!-- СЕКЦІЯ ТОВАРІВ -->
+      <section id="products">
+        <nav class="nav2">
+          <!-- ІСНУЮЧІ ТОВАРИ -->
+          <div class="div1">
+            <p class="p3">
+              Смартфон ZTE Blade A55 4/128GB, яскравий 6,75″
+              IPS‑дисплей, 8‑ядерний процесор Unisoc SC9863A, ємний
+              акумулятор 5 000 мА·год <br /><a class="p5"
+                >Ціна: 3599,00 грн</a
+              >
+            </p>
+            <img
+              src="https://encrypted-tbn1.gstatic.com/shopping?q=tbn:ANd9GcRvogzqPMzRPk6LQX4lqKPBvYA6Sj14PHbx4FXmP9up840PFJL52eeaJMqamJQuSnsEwdc3LvPhHkOde5FLZkJeCLam4TJF1l7gnWESoCCNNuHcmJBYUOc7"
+              class="img2"
+              alt="ZTE Blade A55"
+            />
+          </div>
 
-<main>
-<h1>Вітаємо в нашому інтернет-магазині</h1>
-<p class="p1">Тут ви зможете знайти якісну техніку за невелику ціну</p>
-<p class="p2">У нас є різні гаджети, такі як: смартфони, ноутбуки та планшети</p>
-<nav class="nav2">
-<div class="div1">
-<p class="p3">Смартфон ZTE Blade A55 4/128GB, яскравий 6,75″ IPS‑дисплей, 8‑ядерний процесор Unisoc SC9863A, ємний акумулятор 5 000 мА·год <br><a class="p5">Ціна: 3599,00 грн</a></p>
-<img src="https://encrypted-tbn1.gstatic.com/shopping?q=tbn:ANd9GcRvogzqPMzRPk6LQX4lqKPBvYA6Sj14PHbx4FXmP9up840PFJL52eeaJMqamJQuSnsEwdc3LvPhHkOde5FLZkJeCLam4TJF1l7gnWESoCCNNuHcmJBYUOc7" class="img2">
-</div>
-<div class="div1">
-<img src="https://encrypted-tbn0.gstatic.com/shopping?q=tbn:ANd9GcTCtVWbf5Y1NGS05zWhR176UmPQXfog7yH0-JNATtoc80UsIGQBXkmn-0Lt972CsPiN4aJZtwwIfw-T3sF7VNyG9Tj1bJ9JX-tLm5z01mJkHSle2sxkEJsR" class="img3">
-<p class="p4">Смартфон Samsung Galaxy A56 5G Awesome SM-A566B, яскравий 6,7″ Super AMOLED екран, сучасний процесор Exynos 1580 (4 нм), тривалий термін підтримки, потужна батарея 5 000 мА·г <br><a class="p5"> 14 399,00 грн</a></p>
-</div>
+          <div class="div1">
+            <img
+              src="https://encrypted-tbn0.gstatic.com/shopping?q=tbn:ANd9GcTCtVWbf5Y1NGS05zWhR176UmPQXfog7yH0-JNATtoc80UsIGQBXkmn-0Lt972CsPiN4aJZtwwIfw-T3sF7VNyG9Tj1bJ9JX-tLm5z01mJkHSle2sxkEJsR"
+              class="img3"
+              alt="Samsung Galaxy A56"
+            />
+            <p class="p4">
+              Смартфон Samsung Galaxy A56 5G Awesome SM-A566B,
+              яскравий 6,7″ Super AMOLED екран, сучасний процесор
+              Exynos 1580 (4 нм), тривалий термін підтримки, потужна
+              батарея 5 000 мА·г <br /><a class="p5">
+                14 399,00 грн</a
+              >
+            </p>
+          </div>
 
-<div class="div1">
-<p class="p3">Ноутбук Lenovo IdeaPad 1 15IJL7 Cloud Grey 82LX00AKRA, 15,6-дюймовий full HD дисплей, процесор: Intel Celeron N 4500, 2 ядра, 1.1-2.8ГГц, 8ГБ оперативної пам'яті, SSD 512 ГБ, Гарантія - 12 місяців <br><a class="p5">Ціна: 11990,00 грн</a></p>
-<img src="https://encrypted-tbn0.gstatic.com/shopping?q=tbn:ANd9GcQlU9xNZzvwuxswNMDGFWODtjM3k8kOcuriNuskmEtKls2G2mMxCNZeaSCQWbkQrqAiAWflfWKn04hAjZ54-B5yHeYsnJPeJeDpOEkUZRM" class="img2">
-</div>
-<div class="div1">
-<img src="https://encrypted-tbn1.gstatic.com/shopping?q=tbn:ANd9GcQQuWKOXKJIQkvpVBuRLzSNGETxtWmkLj1Ns8JsMV9uKWqfl12UAlLrw_LGsqRzvOxQUh27V3FDonrThuxgB06bSP891BWLPENItbSg6XI" class="img3">
-<p class="p4">Ноутбук Asus TUF Gaming F15 90NR0GW, процесор: Intel Core i5-12500H, відеокарта: NVIDIA GeForce RTX 3050 з 4 ГБ GDDR6, дисплей: 15.6" FHD (1920x1080), IPS, матовий, 144Гц, оперативна пам'ять: 16 ГБ, батарея: 56 Вт/год, гарантія: 12 місяців <br><a class="p5"> 34999.00 грн</a></p>
-</div>
+          <div class="div1">
+            <p class="p3">
+              Ноутбук Lenovo IdeaPad 1 15IJL7 Cloud Grey 82LX00AKRA,
+              15,6-дюймовий full HD дисплей, процесор: Intel Celeron N
+              4500, 2 ядра, 1.1-2.8ГГц, 8ГБ оперативної пам'яті, SSD
+              512 ГБ, Гарантія - 12 місяців <br /><a class="p5"
+                >Ціна: 11990,00 грн</a
+              >
+            </p>
+            <img
+              src="https://encrypted-tbn0.gstatic.com/shopping?q=tbn:ANd9GcQlU9xNZzvwuxswNMDGFWODtjM3k8kOcuriNuskmEtKls2G2mMxCNZeaSCQWbkQrqAiAWflfWKn04hAjZ54-B5yHeYsnJPeJeDpOEkUZRM"
+              class="img2"
+              alt="Lenovo IdeaPad 1"
+            />
+          </div>
 
+          <div class="div1">
+            <img
+              src="https://encrypted-tbn1.gstatic.com/shopping?q=tbn:ANd9GcQQuWKOXKJIQkvpVBuRLzSNGETxtWmkLj1Ns8JsMV9uKWqfl12UAlLrw_LGsqRzvOxQUh27V3FDonrThuxgB06bSP891BWLPENItbSg6XI"
+              class="img3"
+              alt="Asus TUF Gaming F15"
+            />
+            <p class="p4">
+              Ноутбук Asus TUF Gaming F15 90NR0GW, процесор: Intel
+              Core i5-12500H, відеокарта: NVIDIA GeForce RTX 3050 з 4
+              ГБ GDDR6, дисплей: 15.6" FHD (1920x1080), IPS, матовий,
+              144Гц, оперативна пам'ять: 16 ГБ, батарея: 56 Вт/год,
+              гарантія: 12 місяців <br /><a class="p5">
+                34999.00 грн</a
+              >
+            </p>
+          </div>
 
-<div class="div1">
-<p class="p3">Планшет Xiaomi Redmi Pad Pro 12,1″, IPS LCD-дисплей, роздільність 2560×1600 (2.5K), співвідношення сторін 16:10, Частота оновлення — 120 Гц із AdaptiveSync (підлаштовується до 30–120 Гц), Яскравість: ~500 ніт (типова), до 600 ніт (HBM), Варіанти: 6/128 ГБ, 8/128 ГБ або 8/256 ГБ <br><a class="p5">Ціна: 9999,00 грн</a></p>
-<img src="https://encrypted-tbn1.gstatic.com/shopping?q=tbn:ANd9GcT4Inx5m45ZjvQkKOEqOXR8jlX9zyyd0qRPul6Khsyl3iBNr93slv40ctoIYy1Q15dK8l6scoPoxCvc0nZ2D1XlU_BupTexVLsuCb9rgcutsW08MVlWt1UM" class="img2">
-</div>
-<div class="div1">
-<img src="https://encrypted-tbn2.gstatic.com/shopping?q=tbn:ANd9GcRVA4jLN6Osh37E50kRdLudVbSTEFGTHMaJQ5YMynlUkegCCoc5Rga-Ti8KylwsUn4AEmwePTmI7lbYgqjqe3X2f_zU_OJOoBS3KdlluGKTXytQHm-L4Wfv" class="img3">
-<p class="p4">Планшет Apple iPad 11" 128GB Wi-Fi 2025, 11-дюймів, роздільна здатність 2360 × 1640 пікселів, матове покриття із захистом від відбитків і True Tone, яскравість ≈ 500 ніт, 11-дюймовий Liquid Retina IPS LCD, роздільна здатність 2360 × 1640 пікселів, матове покриття із захистом від відбитків, яскравість ≈ 500 ніт <br><a class="p5"> 16899.00 грн</a></p>
-</div>
-</nav>
-</main>
+          <div class="div1">
+            <p class="p3">
+              Планшет Xiaomi Redmi Pad Pro 12,1″, IPS LCD-дисплей,
+              роздільність 2560×1600 (2.5K), співвідношення сторін
+              16:10, Частота оновлення — 120 Гц із AdaptiveSync
+              (підлаштовується до 30–120 Гц), Яскравість: ~500 ніт
+              (типова), до 600 ніт (HBM), Варіанти: 6/128 ГБ, 8/128 ГБ
+              або 8/256 ГБ <br /><a class="p5">Ціна: 9999,00 грн</a>
+            </p>
+            <img
+              src="https://encrypted-tbn1.gstatic.com/shopping?q=tbn:ANd9GcT4Inx5m45ZjvQkKOEqOXR8jlX9zyyd0qRPul6Khsyl3iBNr93slv40ctoIYy1Q15dK8l6scoPoxCvc0nZ2D1XlU_BupTexVLsuCb9rgcutsW08MVlWt1UM"
+              class="img2"
+              alt="Redmi Pad Pro"
+            />
+          </div>
 
+          <div class="div1">
+            <img
+              src="https://encrypted-tbn2.gstatic.com/shopping?q=tbn:ANd9GcRVA4jLN6Osh37E50kRdLudVbSTEFGTHMaJQ5YMynlUkegCCoc5Rga-Ti8KylwsUn4AEmwePTmI7lbYgqjqe3X2f_zU_OJOoBS3KdlluGKTXytQHm-L4Wfv"
+              class="img3"
+              alt="iPad 11 2025"
+            />
+            <p class="p4">
+              Планшет Apple iPad 11" 128GB Wi-Fi 2025, 11-дюймів,
+              роздільна здатність 2360 × 1640 пікселів, матове
+              покриття із захистом від відбитків і True Tone,
+              яскравість ≈ 500 ніт, 11-дюймовий Liquid Retina IPS LCD,
+              роздільна здатність 2360 × 1640 пікселів, матове
+              покриття із захистом від відбитків, яскравість ≈ 500 ніт
+              <br /><a class="p5"> 16899.00 грн</a>
+            </p>
+          </div>
 
-<footer>
-<nav class="footer">
-<p class="p7">Наші контакти: +380953850283</p>
-<p class="p7">Наше місцезнаходження: вул. Пилипа Орлика, 1, солонка, Львівська область, 81131</p>
-<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1288.7984291298212!2d24.016046317174833!3d49.756028794455624!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x473add00b3db3f49%3A0x1ba508542bc0e506!2z0IbQvdGC0LXRgNC90LXRgi3QvNCw0LPQsNC30LjQvSBHVkwuY29tLnVh!5e0!3m2!1suk!2sua!4v1755266481946!5m2!1suk!2sua" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
-</nav>
-</footer>
+          <!-- ДОДАНІ НОВІ ТОВАРИ -->
 
-<script src="main.js"></script>
-</body>
+          <div class="div1">
+            <p class="p3">
+              Навушники Sony WH-CH720N, Bluetooth, шумозаглушення, до
+              35 год роботи. <br /><a class="p5">3 299,00 грн</a>
+            </p>
+            <img
+              src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS7ZiDXiP0iQ35ZJZYEcmgrtzwVXGSdf39FCQ&s"
+              class="img2"
+              alt="Sony WH-CH720N"
+            />
+          </div>
+
+          <div class="div1">
+            <img
+              src="https://content.rozetka.com.ua/goods/images/big/468997751.jpg"
+              class="img3"
+              alt="Apple Watch"
+            />
+            <p class="p4">
+              Смарт-годинник Apple Watch SE (GPS), моніторинг
+              активності, сповіщення. <br /><a class="p5"
+                >9 499,00 грн</a
+              >
+            </p>
+          </div>
+
+          <div class="div1">
+            <p class="p3">
+              Телевізор LG 43" 4K UHD, webOS, HDR10, Wi-Fi. <br /><a
+                class="p5"
+                >13 999,00 грн</a
+              >
+            </p>
+            <img
+              src="https://www.lg.com/ua/images/televisions/md07596930/gallery/medium01-new.jpg"
+              class="img2"
+              alt="LG 43 4K"
+            />
+          </div>
+
+          <div class="div1">
+            <img
+              src="https://portativ.ua/media/cache/images/1/image/750x700/602f0fa2c1f0d1ba5e241f914e856ff9/catalog/product/u/ecd8f47a54035202e399db9477e0405b.jpg"
+              class="img3"
+              alt="Logitech MX Keys"
+            />
+            <p class="p4">
+              Клавіатура Logitech MX Keys, підсвічування,
+              Bluetooth/USB Receiver. <br /><a class="p5"
+                >3 799,00 грн</a
+              >
+            </p>
+          </div>
+
+          <div class="div1">
+            <p class="p3">
+              Мишка Logitech M720 Triathlon, Bluetooth,
+              багатопристрійність. <br /><a class="p5"
+                >1 499,00 грн</a
+              >
+            </p>
+            <img
+              src="https://i.citrus.world/imgcache/size_800/uploads/shop/a/2/a2ae767a6e0ace0e31a027dd9baa6a46.png"
+              class="img2"
+              alt="Logitech M720"
+            />
+          </div>
+
+          <div class="div1">
+            <img
+              src="https://jbl-harman.in.ua/i/product/968/61fa97ed63adc.webp"
+              class="img3"
+              alt="JBL Flip"
+            />
+            <p class="p4">
+              Колонка JBL Flip 6, водозахист, до 12 год автономності.
+              <br /><a class="p5">3 799,00 грн</a>
+            </p>
+          </div>
+
+          <div class="div1">
+            <p class="p3">
+              Навушники-вкладиші Samsung Galaxy Buds FE, Bluetooth
+              5.2, ANC. <br /><a class="p5">2 599,00 грн</a>
+            </p>
+            <img
+              src="https://touch.com.ua/upload/iblock/5be/clkt3973t8g8rq2x09jpu136fmjenimg.jpg"
+              class="img2"
+              alt="Galaxy Buds"
+            />
+          </div>
+
+          <div class="div1">
+            <img
+              src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSz3AfKERiq2bU22REO-Onf_pw_MaKZ0uUJxg&s"
+              class="img3"
+              alt="Baseus Power Bank"
+            />
+            <p class="p4">
+              Павербанк Baseus 20 000 мА·год, 22.5W, PD/QC. <br /><a
+                class="p5"
+                >899,00 грн</a
+              >
+            </p>
+          </div>
+
+          <div class="div1">
+            <p class="p3">
+              Маршрутизатор TP-Link Archer AX55, Wi-Fi 6, Gigabit.
+              <br /><a class="p5">2 899,00 грн</a>
+            </p>
+            <img
+              src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSMofAQ_-wLiokqOTLmj7yeuChmbjiPpVVOMg&s"
+              class="img2"
+              alt="TP-Link Archer AX55"
+            />
+          </div>
+
+          <div class="div1">
+            <img
+              src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRWQDGdkMHV9hUetBLYHid1qR70WZgCdEJfPg&s"
+              class="img3"
+              alt="Dell Monitor"
+            />
+            <p class="p4">
+              Монітор Dell 27″ IPS, 75 Гц, FHD, тонкі рамки. <br /><a
+                class="p5"
+                >5 999,00 грн</a
+              >
+            </p>
+          </div>
+        </nav>
+      </section>
+    </main>
+
+    <!-- СЕКЦІЯ КОНТАКТІВ -->
+    <footer id="contacts">
+      <nav class="footer">
+        <p class="p7">
+          Наші контакти:
+          <a class="p7" href="tel:+380953850283">+380 95 385 02 83</a>
+        </p>
+        <p class="p7">
+          Наше місцезнаходження: вул. Пилипа Орлика, 1, Солонка,
+          Львівська область, 81131
+        </p>
+        <iframe
+          src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1288.7984291298212!2d24.016046317174833!3d49.756028794455624!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x473add00b3db3f49%3A0x1ba508542bc0e506!2z0IbQvdGC0LXRgNC90LXRgi3QvNCw0LPQsNC30LjQvSBHVkwuY29tLnVh!5e0!3m2!1suk!2sua!4v1755266481946!5m2!1suk!2sua"
+          width="600"
+          height="450"
+          style="border: 0"
+          allowfullscreen=""
+          loading="lazy"
+          referrerpolicy="no-referrer-when-downgrade"
+        ></iframe>
+      </nav>
+    </footer>
+
+    <script src="main.js"></script>
+  </body>
 </html>
