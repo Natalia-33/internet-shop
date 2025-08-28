@@ -1,35 +1,37 @@
-@import url('https://fonts.googleapis.com/css2?family=Roboto+Flex:opsz,wght@8..144,100..1000&display=swap');
-body {  
-    background-color: black;
-    margin: 0;
+@import url("https://fonts.googleapis.com/css2?family=Roboto+Flex:opsz,wght@8..144,100..1000&display=swap");
+body {
+  background-color: black;
+  margin: 0;
 }
 
 footer iframe {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    border-radius: 10px;
-    box-shadow: 0px 0px 5px white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 10px;
+  box-shadow: 0px 0px 5px white;
 }
 h3 {
-    text-align: center;
-    margin-bottom:10px;
-    transition: 0.5s;
+  text-align: center;
+  margin-bottom: 10px;
+  transition: 0.5s;
 }
 h3:hover {
-    transform: scale(1.2);
+  transform: scale(1.2);
 }
 .a1 {
-    text-align: center;
-    color: white;
-    font-size: 30px;
-    transition: 0.5s;
+  text-align: center;
 }
-.a1:hover {
-    transform: scale(1.2);
+
+.golovna {
+  color: white;
+  font-size: 30px;
 }
+
 .footer1 {
-    display: flex;
-    justify-content: center;
-    align-items: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 30px;
+  margin-bottom: 30px;
 }
